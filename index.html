@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio - Quynh Nguyen</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Portfolio - Quynh Nguyen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Quynh Nguyen</h1>
-    <p>Étudiant en L3 MIASHS | Développement - Data - Gestion de projet</p>
-  </header>
+    <header>
+        <div class="header-content">
+            <h1 class="name">Quynh Nguyen</h1>
+            <p class="tagline">Étudiant en L3 MIASHS | Développement - Data - Gestion de projet</p>
+        </div>
+    </header>
 
-  <section id="projets">
-    <h2>Projets académiques</h2>
-    <ul>
-      <li><b>Bibliothèque en ligne (PHP/MySQL)</b> - Application web avec gestion de contenu et outils de recherche [<a href="https://github.com/tonrepo">Code</a>]</li>
-      <li><b>Flappy Bird IA (Python, Deep Learning)</b> - Agent autonome atteignant 1M points [<a href="https://github.com/tonrepo">Code</a>]</li>
-    </ul>
-  </section>
+    <main>
+        <section id="projets" class="card">
+            <h2>Projets académiques</h2>
+            <ul>
+                <li>
+                    <h3>Bibliothèque en ligne (PHP/MySQL)</h3>
+                    <p>Application web avec gestion de contenu et outils de recherche</p>
+                    <a href="https://github.com/tonrepo" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Xem mã nguồn
+                    </a>
+                </li>
+                <li>
+                    <h3>Flappy Bird IA (Python, Deep Learning)</h3>
+                    <p>Agent tự động đạt 1M điểm</p>
+                    <a href="https://github.com/tonrepo" target="_blank" class="project-link">
+                        <i class="fab fa-github"></i> Xem mã nguồn
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : huongquynh66@gmail.com</p>
-    <p><a href="CV.pdf">Télécharger mon CV</a></p>
-  </section>
+        <section id="contact" class="card">
+            <h2>Liên hệ & Tải CV</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email : huongquynh66@gmail.com</p>
+                <p><a href="CV.pdf" download class="cv-link"><i class="fas fa-file-pdf"></i> Tải CV</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Quynh Nguyen. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
