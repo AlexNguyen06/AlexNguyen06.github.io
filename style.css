@@ -1,71 +1,149 @@
-/* Thiết lập các thuộc tính cơ bản cho toàn bộ trang */
+/* Tải phông chữ từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #5A67D8; /* Xanh dương đậm */
+    --secondary-color: #4C51BF; /* Xanh dương */
+    --background-color: #1A202C; /* Nền tối */
+    --card-background: #2D3748; /* Nền của thẻ */
+    --text-color: #CBD5E0; /* Chữ màu xám sáng */
+    --heading-color: #FFFFFF; /* Tiêu đề màu trắng */
+    --link-color: #63B3ED; /* Màu liên kết */
+}
+
 body {
-    font-family: 'Montserrat', sans-serif; /* Sử dụng một phông chữ hiện đại */
-    background-color: #1a1a2e; /* Màu nền tối */
-    color: #e0e0e0; /* Màu chữ sáng */
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-/* Kiểu cho header */
 header {
-    background-color: #162447; /* Màu nền cho header */
-    text-align: center;
+    width: 100%;
+    background-color: var(--card-background);
     padding: 2rem 0;
-    border-bottom: 2px solid #533483;
+    text-align: center;
+    border-bottom: 3px solid var(--secondary-color);
 }
 
-header h1 {
-    font-family: 'Lato', sans-serif;
-    font-size: 2.5rem;
-    color: #ffffff;
-    margin-bottom: 0.5rem;
+.header-content {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* Kiểu cho các section */
-section {
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    color: var(--heading-color);
+    margin: 0;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #A0AEC0;
+    margin-top: 0.5rem;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    max-width: 900px;
     padding: 2rem;
-    margin: 2rem auto;
-    max-width: 800px;
-    background-color: #1f4068;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
 
-section h2 {
-    color: #ffffff;
-    border-left: 5px solid #533483;
-    padding-left: 1rem;
+.card {
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
 }
 
-/* Kiểu cho danh sách dự án */
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
 #projets ul {
-    list-style: none; /* Bỏ dấu chấm mặc định */
+    list-style: none;
     padding: 0;
 }
 
 #projets li {
-    background-color: #2e628b;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+    background-color: #374151;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #projets li:hover {
-    transform: translateY(-5px); /* Hiệu ứng nổi lên khi di chuột vào */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Kiểu cho các liên kết */
-a {
-    color: #4CAF50; /* Màu liên kết nổi bật */
-    text-decoration: none; /* Bỏ gạch chân mặc định */
+#projets h3 {
+    margin-top: 0;
+    color: var(--heading-color);
+    font-size: 1.4rem;
+}
+
+.project-link {
+    color: var(--link-color);
+    text-decoration: none;
     font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
     transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #76FF7A; /* Màu khi di chuột vào */
-    text-decoration: underline;
+.project-link:hover {
+    color: #90CDF4;
+}
+
+.project-link i {
+    font-size: 1.2rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.cv-link {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cv-link:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 1px solid #4A5568;
+    margin-top: auto;
 }
