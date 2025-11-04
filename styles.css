@@ -197,6 +197,21 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0 auto 2rem;
   max-width: 720px;
 }
+.hero-name {
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--primary-light);
+  margin-bottom: 0.25rem;
+  animation: fadeInUp 1s ease-out 0.5s both;
+}
+
+.hero-role {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease-out 0.6s both;
+}
+
 /* ----- Buttons ----- */
 .btn {
   display: inline-flex;
