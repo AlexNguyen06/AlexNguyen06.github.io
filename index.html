@@ -13,6 +13,21 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
+<script>
+  const password = "miage2025"; // mật khẩu bạn muốn
+  let access = sessionStorage.getItem("accessGranted");
+
+  if (!access) {
+    const userInput = prompt("Entrez le mot de passe pour accéder au portfolio :");
+    if (userInput === password) {
+      sessionStorage.setItem("accessGranted", "true");
+    } else {
+      alert("Mot de passe incorrect !");
+      window.location.href = "https://google.com"; // hoặc trang bạn muốn chuyển hướng
+    }
+  }
+</script>
+  
 <body>
   <!-- Navbar -->
   <nav class="navbar" aria-label="Navigation principale">
