@@ -1,51 +1,131 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Portfolio - Quynh Nguyen</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Système d'Information — Dark Purple</title>
+  <meta name="description" content="Portfolio Système d'Information : TDs, cours, projets — thème violet sombre, animations accessibles.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1 class="name">Quynh Nguyen</h1>
-            <p class="tagline">Étudiant en L3 MIASHS | Développement - Data - Gestion de projet</p>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Navigation principale">
+    <div class="nav-container">
+      <a href="#accueil" class="nav-logo"><span class="logo-gradient">Portfolio</span> SI</a>
+      <ul class="nav-menu">
+        <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+        <li><a href="#tds" class="nav-link">TDs</a></li>
+        <li><a href="#cours" class="nav-link">Cours</a></li>
+        <li><a href="#projets" class="nav-link">Projets</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="accueil" class="hero">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">Bienvenue sur mon portfolio</div>
+      <h1 class="hero-title">Portfolio <span class="gradient-text">Système d'Information</span></h1>
+      <p class="hero-subtitle">Retrouvez tous mes TDs, cours et projets dans un espace moderne, sombre et accessible — thème violet.</p>
+      <div class="hero-buttons">
+        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="mouse"></div></div>
+  </section>
+
+  <!-- TDs -->
+  <section id="tds" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge">Apprentissage</span>
+        <h2 class="section-title">Travaux Dirigés</h2>
+        <p class="section-description">Découvrez mes travaux dirigés et exercices pratiques</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card fade-in">
+          <div class="card-icon"></div>
+          <h3>TD1: Introduction aux Systèmes d'Information</h3>
+          <p class="card-description">Découverte des concepts fondamentaux des SI.</p>
+          <a class="btn btn-small" href="#">Voir les ressources</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projets" class="section section-alt">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge">Réalisations</span>
+        <h2 class="section-title">Projets</h2>
+        <p class="section-description">Découvrez mes projets et réalisations techniques</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card fade-in">
+          <span class="project-badge">Featured</span>
+          <h3>Bander-Sneakers</h3>
+          <p class="project-description">Site e-commerce complet avec gestion des commandes et paiements.</p>
+          <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <form class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required />
         </div>
-    </header>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+        <div id="form-status" role="status"></div>
+      </form>
+    </div>
+  </section>
 
-    <main>
-        <section id="projets" class="card">
-            <h2>Projets académiques</h2>
-            <ul>
-                <li>
-                    <h3>Bibliothèque en ligne (PHP/MySQL)</h3>
-                    <p>Application web avec gestion de contenu et outils de recherche</p>
-                    <a href="https://github.com/tonrepo" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> voir plus
-                    </a>
-                </li>
-                <li>
-                    <h3>Flappy Bird IA (Python, Deep Learning)</h3>
-                    <p>Nous avons développé un algorithme autonome capable d'atteindre 1 million de points, optimisé grâce à un processus d'apprentissage itératif et à la collaboration d'experts.</p>
-                    <a href="https://github.com/tonrepo" target="_blank" class="project-link">
-                        <i class="fab fa-github"></i> voir plus
-                    </a>
-                </li>
-            </ul>
-        </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-background"><div class="footer-orb"></div></div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3><span class="logo-gradient">Portfolio</span> SI</h3>
+          <p>Système d'Information - 2025</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">© 2025 Portfolio Système d'Information — Tous droits réservés</p>
+      </div>
+    </div>
+  </footer>
 
-        <section id="contact" class="card">
-            <h2>Contact & Mon CV</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-envelope"></i> Email : huongquynh66@gmail.com</p>
-                <p><a href="CV.pdf" download class="cv-link"><i class="fas fa-file-pdf"></i> Télécharger CV</a></p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Quynh Nguyen. Tous droits réservés.</p>
-    </footer>
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
