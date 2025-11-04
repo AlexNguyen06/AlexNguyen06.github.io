@@ -2,21 +2,19 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Portfolio Système d'Information — Dark Purple</title>
-  <meta name="description" content="Portfolio Système d'Information : TDs, cours, projets — thème violet sombre, animations accessibles.">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <!-- Navigation -->
+  <!-- Navbar -->
   <nav class="navbar" aria-label="Navigation principale">
     <div class="nav-container">
       <a href="#accueil" class="nav-logo"><span class="logo-gradient">Portfolio</span> SI</a>
@@ -31,8 +29,8 @@
   </nav>
 
   <!-- Hero -->
-  <section id="accueil" class="hero">
-    <div class="hero-background">
+  <section id="accueil" class="hero" aria-label="Accueil">
+    <div class="hero-background" aria-hidden="true">
       <div class="gradient-orb orb-1"></div>
       <div class="gradient-orb orb-2"></div>
       <div class="gradient-orb orb-3"></div>
@@ -46,21 +44,21 @@
         <a href="#contact" class="btn btn-secondary">Me contacter</a>
       </div>
     </div>
-    <div class="scroll-indicator"><div class="mouse"></div></div>
+    <div class="scroll-indicator" aria-hidden="true"><div class="mouse"></div></div>
   </section>
 
   <!-- TDs -->
-  <section id="tds" class="section section-alt">
+  <section id="tds" class="section section-alt" aria-labelledby="tds-title">
     <div class="container">
       <div class="section-header fade-in">
         <span class="section-badge">Apprentissage</span>
-        <h2 class="section-title">Travaux Dirigés</h2>
+        <h2 class="section-title" id="tds-title">Travaux Dirigés</h2>
         <p class="section-description">Découvrez mes travaux dirigés et exercices pratiques</p>
       </div>
       <div class="cards-grid">
         <article class="card fade-in">
           <div class="card-icon"></div>
-          <h3>TD1: Introduction aux Systèmes d'Information</h3>
+          <h3>TD1: Introduction aux SI</h3>
           <p class="card-description">Découverte des concepts fondamentaux des SI.</p>
           <a class="btn btn-small" href="#">Voir les ressources</a>
         </article>
@@ -68,27 +66,39 @@
     </div>
   </section>
 
-  <!-- Projets -->
-  <section id="projets" class="section section-alt">
+  <!-- Cours -->
+  <section id="cours" class="section" aria-labelledby="cours-title">
     <div class="container">
       <div class="section-header fade-in">
-        <span class="section-badge">Réalisations</span>
-        <h2 class="section-title">Projets</h2>
-        <p class="section-description">Découvrez mes projets et réalisations techniques</p>
+        <span class="section-badge">Connaissances</span>
+        <h2 class="section-title" id="cours-title">Cours</h2>
+        <p class="section-description">Mes notes de cours et ressources pédagogiques</p>
       </div>
-      <div class="projects-grid">
-        <article class="project-card fade-in">
-          <span class="project-badge">Featured</span>
-          <h3>Bander-Sneakers</h3>
-          <p class="project-description">Site e-commerce complet avec gestion des commandes et paiements.</p>
-          <div class="tech-tags"><span class="tech-tag">HTML</span><span class="tech-tag">CSS</span><span class="tech-tag">JavaScript</span></div>
+      <div class="cards-grid">
+        <article class="card fade-in">
+          <div class="card-icon"></div>
+          <h3>Chapitre 1: Architecture des SI</h3>
+          <p class="card-description">Composants et organisation des systèmes d'information.</p>
+          <a href="#" class="btn btn-small">Accéder au cours</a>
         </article>
       </div>
     </div>
   </section>
 
+  <!-- Projets -->
+  <section id="projets" class="section section-alt" aria-labelledby="projets-title">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-badge">Réalisations</span>
+        <h2 class="section-title" id="projets-title">Projets</h2>
+        <p class="section-description">Découvrez mes projets et réalisations techniques</p>
+      </div>
+     
+    </div>
+  </section>
+
   <!-- Contact -->
-  <section id="contact" class="section">
+  <section id="contact" class="section" aria-labelledby="contact-title">
     <div class="container contact-container">
       <form class="contact-form" novalidate>
         <div class="form-group">
@@ -104,14 +114,21 @@
           <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Envoyer le message</button>
-        <div id="form-status" role="status"></div>
+        <div id="form-status" role="status" aria-live="polite" style="margin-top:.8rem;color:var(--text-secondary);"></div>
       </form>
     </div>
   </section>
 
+  <!-- Back to top -->
+  <button id="backToTop" class="back-to-top" aria-label="Revenir en haut" title="Revenir en haut">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M6 15l6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-background"><div class="footer-orb"></div></div>
+    <div class="footer-background" aria-hidden="true"><div class="footer-orb"></div></div>
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
