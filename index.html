@@ -13,7 +13,6 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 </head>
-  
 <body>
   <!-- Navbar -->
   <nav class="navbar" aria-label="Navigation principale">
@@ -22,10 +21,9 @@
       <ul class="nav-menu">
         <li><a href="#accueil" class="nav-link active">Accueil</a></li>
         <li><a href="#tds" class="nav-link">TDs</a></li>
-        <li><a href="#projets" class="nav-link">Projets Final</a></li>
-        <li><a href="#projets" class="nav-link">Diaporama</a></li>
-        <li><a href="#projets" class="nav-link">Certifications</a></li>
-        
+        <li><a href="#projets" class="nav-link">Projet final</a></li>
+        <li><a href="#diaporama" class="nav-link">Diaporama</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
@@ -38,24 +36,29 @@
       <div class="gradient-orb orb-2"></div>
       <div class="gradient-orb orb-3"></div>
     </div>
-  
+
     <div class="hero-content">
       <div class="hero-badge">Bienvenue sur mon portfolio</div>
-      <h1 class="hero-title">Portfolio Système d'Information<span class="gradient-text"> de Quynh Nguyen </span></h1>
-  
-      <!-- TÊN + CHỨC DANH: thêm hai dòng này -->
-      <h2 class="hero-name">Étudiant en L3 MIAGE à Université Paris-Nanterre</h2>
-  
-      <p class="hero-subtitle">Retrouvez tous mes TDs, cours et projets dans un espace moderne, sombre et accessible — thème violet.</p>
+      <h1 class="hero-title">
+        Portfolio Système d'Information
+        <span class="gradient-text"> de Quynh Nguyen</span>
+      </h1>
+
+      <h2 class="hero-name">Étudiant en L3 MIAGE à l'Université Paris-Nanterre</h2>
+
+      <p class="hero-subtitle">
+        Retrouvez tous mes TDs, projets et documents dans un espace moderne, sombre et accessible — thème violet.
+      </p>
       <div class="hero-buttons">
-        <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+        <a href="#projets" class="btn btn-primary">Voir mon projet final</a>
         <a href="#contact" class="btn btn-secondary">Me contacter</a>
       </div>
     </div>
-  
-    <div class="scroll-indicator" aria-hidden="true"><div class="mouse"></div></div>
-  </section>
 
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="mouse"></div>
+    </div>
+  </section>
 
   <!-- TDs -->
   <section id="tds" class="section section-alt" aria-labelledby="tds-title">
@@ -66,7 +69,7 @@
           Retrouvez ici l’ensemble de mes TDs réalisés dans le cadre du cours de Système d’Information.
         </p>
       </div>
-  
+
       <div class="cards-grid">
         <!-- TD1 -->
         <article class="card fade-in">
@@ -75,43 +78,52 @@
             <h3>TD1 : Introduction aux Systèmes d’Information</h3>
             <span class="date">15/09/2025</span>
           </div>
-          <p class="card-description">Découverte des composants et objectifs d’un SI moderne.</p>
-          <a href="docs/td1.pdf" class="btn btn-small" download>Télécharger</a>
+          <p class="card-description">
+            Découverte des composants et objectifs d’un SI moderne.
+          </p>
+          <!-- adapte le fichier au bon nom réel -->
+          <a href="docs/td1/TD 1 SI 2.docx" class="btn btn-small" download>Télécharger</a>
         </article>
-  
+
         <!-- TD2 -->
         <article class="card fade-in">
           <div class="card-icon">📗</div>
           <div class="card-header">
-            <h3>TD2 : Processus Organisationnel</h3>
+            <h3>TD2 : Processus organisationnels</h3>
             <span class="date">22/09/2025</span>
           </div>
-          <p class="card-description">Étude du lien entre processus et flux d’informations.</p>
-          <a href="docs/td2.pdf" class="btn btn-small" download>Télécharger</a>
+          <p class="card-description">
+            Étude du lien entre processus et flux d’informations.
+          </p>
+          <a href="docs/td2/TD2.docx" class="btn btn-small" download>Télécharger</a>
         </article>
-  
+
         <!-- TD3 -->
         <article class="card fade-in">
           <div class="card-icon">📙</div>
           <div class="card-header">
-            <h3>Diagramme de Flux</h3>
+            <h3>Diagramme de flux</h3>
             <span class="date">29/09/2025</span>
           </div>
-          <p class="card-description">Modélisation avec diagrammes</p>
+          <p class="card-description">
+            Modélisation avec diagrammes de flux.
+          </p>
           <a href="docs/DiagrammeFlux.odt" class="btn btn-small" download>Télécharger</a>
         </article>
-  
+
         <!-- TD4 -->
         <article class="card fade-in">
           <div class="card-icon">📒</div>
           <div class="card-header">
-            <h3>Les phases SI</h3>
+            <h3>Les phases du SI</h3>
             <span class="date">06/10/2025</span>
           </div>
-          <p class="card-description">Illustration des interactions entre objets du SI.</p>
-          <a href="Les phases SI.pdf" class="btn btn-small" download>Télécharger</a>
+          <p class="card-description">
+            Présentation des différentes phases de la vie d’un système d’information.
+          </p>
+          <a href="docs/Les phases SI.pdf" class="btn btn-small" download>Télécharger</a>
         </article>
-  
+
         <!-- TD5 -->
         <article class="card fade-in">
           <div class="card-icon">📔</div>
@@ -119,28 +131,33 @@
             <h3>TP GANTT</h3>
             <span class="date">13/10/2025</span>
           </div>
-          <p class="card-description">Planification de projet et suivi avec diagrammes de Gantt.</p>
+          <p class="card-description">
+            Planification de projet et suivi à l’aide d’un diagramme de Gantt.
+          </p>
           <a href="docs/tp gantt.docx" class="btn btn-small" download>Télécharger</a>
         </article>
-  
-  
+      </div>
+
       <div class="info-note fade-in">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
           <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
           <path d="M12 16V12M12 8H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
-        <span>Les fichiers PDF sont disponibles dans le dossier <strong>/docs</strong> du portfolio.</span>
+        <span>
+          Les fichiers sont disponibles dans le dossier
+          <strong>/docs</strong> du portfolio.
+        </span>
       </div>
     </div>
   </section>
-  
-  <!-- Projets -->
+
+  <!-- Projet final -->
   <section id="projets" class="section section-alt" aria-labelledby="projets-title">
     <div class="container">
       <div class="section-header fade-in">
         <h2 class="section-title" id="projets-title">Projet final</h2>
         <p class="section-description">
-          Projet de Système d’Information réalisé dans le cadre du cours : code, documentation et support de soutenance.
+          Projet de Système d’Information réalisé dans le cadre du cours : application, documentation et support de soutenance.
         </p>
       </div>
 
@@ -148,25 +165,26 @@
         <article class="card fade-in">
           <div class="card-icon">💼</div>
           <div class="card-header">
-            <h3>SYSTÈME DE GESTION DE BIBLIOTHÈQUE</h3>
+            <h3>Système de gestion de bibliothèque</h3>
             <span class="date">2025</span>
           </div>
           <p class="card-description">
-            Brève description du projet : objectifs, technologies utilisées et rôle que j’ai occupé.
+            Application web de gestion de bibliothèque permettant la gestion des livres, des emprunts et des usagers. 
+            Projet réalisé dans le cadre du cours de Système d’Information.
           </p>
 
           <div class="card-buttons">
             <a href="docs/LBM.zip" class="btn btn-small" download>Télécharger le projet</a>
-            <a href="docs/cahier_des_charges.pdf" class="btn btn-small" download>Cahier des charges & rapport</a>
-            <a href="docs/Latex.zip" class="btn btn-small" download>La code Latex</a>
-            <a href="docs/diapo_soutenance.pdf" class="btn btn-small" download>La diapograma</a>
+            <a href="docs/cahier_des_charges.pdf" class="btn btn-small" download>Cahier des charges &amp; rapport</a>
+            <a href="docs/Latex.zip" class="btn btn-small" download>Le code LaTeX</a>
+            <a href="docs/diapo_soutenance.pdf" class="btn btn-small" download>Le diaporama</a>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Diaporama (section séparée) -->
+  <!-- Diaporama -->
   <section id="diaporama" class="section section-alt" aria-labelledby="diapo-title">
     <div class="container">
       <div class="section-header fade-in">
@@ -180,7 +198,9 @@
         <article class="card fade-in">
           <div class="card-icon">🎞️</div>
           <h3>Diapo de soutenance</h3>
-          <p class="card-description">Support de présentation du projet final.</p>
+          <p class="card-description">
+            Support de présentation du projet final.
+          </p>
           <a href="docs/diapo_soutenance.pdf" class="btn btn-small" download>Télécharger la diapo</a>
         </article>
       </div>
@@ -188,52 +208,55 @@
   </section>
 
   <!-- Certifications -->
-<section id="certifications" class="section" aria-labelledby="certifications-title">
-  <div class="container">
-    <div class="section-header fade-in">
-      <h2 class="section-title" id="certifications-title">Certifications</h2>
-      <p class="section-description">
-        Voici l’ensemble de mes certifications professionnelles et académiques obtenues au fil de mes études et formations.
-      </p>
+  <section id="certifications" class="section" aria-labelledby="certifications-title">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title" id="certifications-title">Certifications</h2>
+        <p class="section-description">
+          Voici l’ensemble de mes certifications académiques et professionnelles obtenues au fil de mes études et formations.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Certification 1 -->
+        <article class="card fade-in">
+          <div class="card-icon">🏅</div>
+          <div class="card-header">
+            <h3>Coursera — Machine Learning (Andrew Ng)</h3>
+            <span class="date">2024</span>
+          </div>
+          <p class="card-description">
+            Introduction aux principaux algorithmes de Machine Learning et à leurs applications.
+          </p>
+          <a href="docs/certif1.pdf" class="btn btn-small" download>Télécharger</a>
+        </article>
+
+        <!-- Certification 2 -->
+        <article class="card fade-in">
+          <div class="card-icon">🎓</div>
+          <div class="card-header">
+            <h3>Coursera — Analyse de données Google</h3>
+            <span class="date">2025</span>
+          </div>
+          <p class="card-description">
+            Parcours d’initiation à l’analyse de données : collecte, nettoyage, visualisation et prise de décision.
+          </p>
+          <a href="docs/certif2.pdf" class="btn btn-small" download>Télécharger</a>
+        </article>
+      </div>
     </div>
-
-    <div class="cards-grid">
-      
-      <!-- Certification 1 -->
-      <article class="card fade-in">
-        <div class="card-icon">🏅</div>
-        <div class="card-header">
-          <h3>Coursera - Machine Learning par Andrew Ng </h3>
-          <span class="date">2024</span>
-        </div>
-        <a href="docs/certif1.pdf" class="btn btn-small" download>Télécharger</a>
-      </article>
-
-      <!-- Certification 2 -->
-      <article class="card fade-in">
-        <div class="card-icon">🎓</div>
-        <div class="card-header">
-          <h3>Coursera - Analyse de données Google</h3>
-          <span class="date">2025</span>
-        </div>
-        <a href="docs/certif2.pdf" class="btn btn-small" download>Télécharger</a>
-      </article>
-
-      <!-- Thêm bao nhiêu cũng được -->
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="section" aria-labelledby="contact-title">
     <div class="container contact-container">
       <div class="section-header fade-in">
-        <h2 class="section-title" id="tds-title">Coctact</h2>
+        <h2 class="section-title" id="contact-title">Contact</h2>
         <p class="section-description">
-          Envoyez le message à l’auteur depuis cet espace
+          Envoyez votre message à l’auteur depuis cet espace.
         </p>
       </div>
+
       <form class="contact-form" novalidate>
         <div class="form-group">
           <label for="name">Nom</label>
@@ -262,16 +285,20 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer-background" aria-hidden="true"><div class="footer-orb"></div></div>
+    <div class="footer-background" aria-hidden="true">
+      <div class="footer-orb"></div>
+    </div>
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
           <h3><span class="logo-gradient">Portfolio</span> SI</h3>
-          <p>Système d'Information</p>
+          <p>Système d'information</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p class="copyright">© 2025 Portfolio Système d'Information — Tous droits réservés par Quynh Nguyen</p>
+        <p class="copyright">
+          © 2025 Portfolio Système d'Information — Tous droits réservés par Quynh Nguyen
+        </p>
       </div>
     </div>
   </footer>
